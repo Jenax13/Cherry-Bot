@@ -1,0 +1,29 @@
+html_content = """<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Cherry Bot - Panel de Control</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='container'>
+        <h1>🍒 Cherry Bot IA</h1>
+        <div class='bot-status'>Estado: <span>En línea ✨</span></div>
+        
+        <div class='message-box'>
+            <h3>🌸 Mensaje del Sistema</h3>
+            <p>Cherry está lista para charlar con sus humanos bonitos en WhatsApp.</p>
+        </div>
+
+        <div style='margin-top: 20px;'>
+            <button onclick="alert('¡Cherry te envía un beso! 🍒')">Saludar a Cherry</button>
+        </div>
+    </div>
+</body>
+</html>"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print('✅ Archivo index.html generado correctamente.')
